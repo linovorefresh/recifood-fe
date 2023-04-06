@@ -1,0 +1,9 @@
+.img-container {
+    position: relative;
+    /* margin: 1rem 1rem; */
+}
+
+.image {
+    width: 100%;
+    display: block;
+}
