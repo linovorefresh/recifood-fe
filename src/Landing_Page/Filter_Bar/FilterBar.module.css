@@ -1,11 +1,11 @@
 .filter-bar {
-    border: solid 1px #cecece;
-    width: 86.5vw;
-    margin: 2rem auto 0 auto;
-    padding: 1.25rem 0;
-    justify-content: space-evenly;
-    display: flex;
-    
+    width: 86.5vw; 
+    display: block; /* from grid*/ 
+    /* grid-template-columns: repeat(auto-fill, minmax( 340px, 1fr));  */
+    justify-content: space-evenly; 
+    padding: 1.25rem 0; 
+    margin: 2rem auto 0 auto; 
+    border: solid 1px #cecece; 
 }
 
 .filter {
@@ -13,4 +13,36 @@
     font-size: 22px;
     font-weight: 560;
     color: #151515;
+    display: inline-block; /* from block*/
+
+    padding: 0 16px;
+    text-align: start;
+}
+
+.filter > span {
+    float: right;
+    height: 80%;
+    padding-left: 20px;
+}
+
+.filter > span >img {
+    width: 80%;
+    height: 80%;
+    vertical-align: text-bottom;
+}
+
+@media (max-width: 980px) {
+
+    .filter {
+        border: solid 1px #cecece;
+        margin-bottom: 10px;
+        padding: 14px;
+        font-size: 18px;
+        text-align: start;
+        width: 100%;
+    }
+
+    .filter-bar {
+        border: none;
+    }
 }
