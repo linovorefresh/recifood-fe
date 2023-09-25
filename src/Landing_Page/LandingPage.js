@@ -5,9 +5,9 @@ import styles from './LandingPage.module.css';
 
 export function LandingPage() {
     return (
-        <React.Fragment className={styles['landing-page']}>
+        <div className={styles['landing-page']}>
             <TopNav />
             <FilterBar />
-        </React.Fragment>
+        </div>
     );
 }
